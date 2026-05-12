@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Reading Progress - Teacher's Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-book-open"></i> English Reading Progress</h1>
+            <h2>《Teacher’s Pet》- Chapter Reading Record</h2>
+            <p class="subtitle">Designed for 4th Grade Students | 四年级英文原著精读进度表</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Section 1: Basic Information -->
+            <section class="card" id="basic-info">
+                <div class="card-header">
+                    <h3><i class="fas fa-info-circle"></i> Basic Information / 基础信息</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reading-date">Reading Date / 阅读日期:</label>
+                            <input type="date" id="reading-date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="chapter-title">Chapter Title / 章节标题:</label>
+                            <input type="text" id="chapter-title" class="form-control" value="Teacher's Pet" placeholder="Enter chapter title">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reading-duration">Reading Duration / 阅读时长:</label>
+                            <div class="duration-input">
+                                <input type="number" id="reading-hours" class="form-control small" min="0" max="10" placeholder="Hrs">
+                                <span>hours</span>
+                                <input type="number" id="reading-minutes" class="form-control small" min="0" max="59" placeholder="Mins">
+                                <span>minutes</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Self Evaluation / 自我评价:</label>
+                            <div class="rating">
+                                <div class="stars">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5" title="Excellent">☆</label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4" title="Good">☆</label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3" title="Average">☆</label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2" title="Fair">☆</label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1" title="Poor">☆</label>
+                                </div>
+                                <div class="rating-text">⭐ 1-5 stars</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: New Words -->
+            <section class="card" id="new-words">
+                <div class="card-header">
+                    <h3><i class="fas fa-book"></i> New Words / 生词积累区</h3>
+                </div>
+                <div class="card-body">
+                    <p class="section-help">Write down new words you encountered in the reading, with pronunciation, Chinese meaning, and your own memory method.</p>
+                    <div class="table-container">
+                        <table class="words-table">
+                            <thead>
+                                <tr>
+                                    <th>New Word / 生词</th>
+                                    <th>Pronunciation Audio / 发音</th>
+                                    <th>Chinese Meaning / 中文释义</th>
+                                    <th>Memory Method / 个人记忆方法</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" class="table-input" placeholder="e.g. pet"></td>
+                                    <td><button type="button" class="play-btn" title="Play pronunciation"><i class="fas fa-volume-up"></i></button></td>
+                                    <td><input type="text" class="table-input" placeholder="宠物"></td>
+                                    <td><input type="text" class="table-input" placeholder="联想：pet animal"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><button type="button" class="play-btn" title="Play pronunciation"><i class="fas fa-volume-up"></i></button></td>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><input type="text" class="table-input"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><button type="button" class="play-btn" title="Play pronunciation"><i class="fas fa-volume-up"></i></button></td>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><input type="text" class="table-input"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><button type="button" class="play-btn" title="Play pronunciation"><i class="fas fa-volume-up"></i></button></td>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><input type="text" class="table-input"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><button type="button" class="play-btn" title="Play pronunciation"><i class="fas fa-volume-up"></i></button></td>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><input type="text" class="table-input"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="add-row-btn"><i class="fas fa-plus"></i> Add More Words / 添加更多生词</button>
+                </div>
+            </section>
+
+            <!-- Section 3: Key Phrases -->
+            <section class="card" id="key-phrases">
+                <div class="card-header">
+                    <h3><i class="fas fa-quote-right"></i> Key Phrases / 重点短语区</h3>
+                </div>
+                <div class="card-body">
+                    <p class="section-help">Write down key phrases, their Chinese meanings, and your personal memory methods - one phrase per row.</p>
+                    <div class="table-container">
+                        <table class="phrases-table">
+                            <thead>
+                                <tr>
+                                    <th>Phrases / 词组</th>
+                                    <th>Chinese Meaning / 中文释义</th>
+                                    <th class="memory-header">Personal Memory Method / 个人记忆区</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" class="table-input" placeholder="e.g. Teacher's pet"></td>
+                                    <td><input type="text" class="table-input" placeholder="e.g. 老师的宠儿"></td>
+                                    <td><textarea class="phrase-memory" rows="3" placeholder="e.g. 联想：pet是宠物，teacher's pet就是老师最喜欢的宠物/学生"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><textarea class="phrase-memory" rows="3"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><textarea class="phrase-memory" rows="3"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><textarea class="phrase-memory" rows="3"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><input type="text" class="table-input"></td>
+                                    <td><textarea class="phrase-memory" rows="3"></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="add-phrase-btn"><i class="fas fa-plus"></i> Add More Phrases / 添加更多词组</button>
+                </div>
+            </section>
+
+            <!-- Section 4: Sentence Analysis -->
+            <section class="card" id="sentence-analysis">
+                <div class="card-header">
+                    <h3><i class="fas fa-language"></i> Sentence Analysis / 长难句拆解区</h3>
+                </div>
+                <div class="card-body">
+                    <p class="section-help">Analyze difficult sentences with original text, grammar points, and imitation practice. Each sentence can have multiple grammar points.</p>
+                    
+                    <div class="sentence-container" id="sentence-container">
+                        <!-- Sentence 1 -->
+                        <div class="sentence-block" data-sentence-id="1">
+                            <div class="sentence-header">
+                                <h4><i class="fas fa-align-left"></i> Sentence #1</h4>
+                                <button type="button" class="remove-sentence-btn" title="Remove this sentence"><i class="fas fa-times"></i></button>
+                            </div>
+                            
+                            <div class="sentence-content">
+                                <div class="textarea-group">
+                                    <label>Original Sentence / 原句:</label>
+                                    <textarea class="form-control sentence-original" rows="3" placeholder="Copy the difficult sentence from the text..."></textarea>
+                                </div>
+                                
+                                <div class="grammar-points-section">
+                                    <div class="section-subheader">
+                                        <h5><i class="fas fa-code-branch"></i> Grammar Points / 语法点</h5>
+                                        <button type="button" class="add-grammar-point-btn" data-sentence-id="1">Add Grammar Point / 添加语法点</button>
+                                    </div>
+                                    
+                                    <div class="table-container">
+                                        <table class="grammar-points-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Grammar Point / 语法点</th>
+                                                    <th>Chinese Explanation / 中文释义</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="text" class="table-input" placeholder="e.g. Present perfect tense"></td>
+                                                    <td><input type="text" class="table-input" placeholder="e.g. 现在完成时"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" class="table-input" placeholder="e.g. Relative clause"></td>
+                                                    <td><input type="text" class="table-input" placeholder="e.g. 关系从句"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <div class="textarea-group">
+                                    <label>Imitation Practice / 仿写:</label>
+                                    <textarea class="form-control sentence-imitation" rows="3" placeholder="Write your own sentence using the same structure..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Sentence 2 -->
+                        <div class="sentence-block" data-sentence-id="2">
+                            <div class="sentence-header">
+                                <h4><i class="fas fa-align-left"></i> Sentence #2</h4>
+                                <button type="button" class="remove-sentence-btn" title="Remove this sentence"><i class="fas fa-times"></i></button>
+                            </div>
+                            
+                            <div class="sentence-content">
+                                <div class="textarea-group">
+                                    <label>Original Sentence / 原句:</label>
+                                    <textarea class="form-control sentence-original" rows="3" placeholder="Copy the difficult sentence from the text..."></textarea>
+                                </div>
+                                
+                                <div class="grammar-points-section">
+                                    <div class="section-subheader">
+                                        <h5><i class="fas fa-code-branch"></i> Grammar Points / 语法点</h5>
+                                        <button type="button" class="add-grammar-point-btn" data-sentence-id="2">Add Grammar Point / 添加语法点</button>
+                                    </div>
+                                    
+                                    <div class="table-container">
+                                        <table class="grammar-points-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Grammar Point / 语法点</th>
+                                                    <th>Chinese Explanation / 中文释义</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="text" class="table-input"></td>
+                                                    <td><input type="text" class="table-input"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" class="table-input"></td>
+                                                    <td><input type="text" class="table-input"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <div class="textarea-group">
+                                    <label>Imitation Practice / 仿写:</label>
+                                    <textarea class="form-control sentence-imitation" rows="3" placeholder="Write your own sentence using the same structure..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="add-sentence-btn"><i class="fas fa-plus"></i> Add New Sentence / 添加新句子</button>
+                </div>
+            </section>
+
+            <!-- Section 5: Character Analysis -->
+            <section class="card" id="character-analysis">
+                <div class="card-header">
+                    <h3><i class="fas fa-user-friends"></i> Character Analysis / 人物分析板块</h3>
+                </div>
+                <div class="card-body">
+                    <p class="section-help">Record personality traits with adjectives and evidence from the text. Add more adjectives as you discover them!</p>
+                    <div class="character-grid" id="character-grid">
+                        <!-- Marvin -->
+                        <div class="character-card" data-character="marvin">
+                            <div class="character-header">
+                                <h4><i class="fas fa-user"></i> Marvin</h4>
+                            </div>
+                            <table class="character-traits-table">
+                                <thead>
+                                    <tr>
+                                        <th>Adjective / 形容词</th>
+                                        <th>Evidence / 证据</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text" class="table-input" placeholder="e.g. kind"></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. He helps his friends."></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="table-input" placeholder="e.g. helpful"></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. He always offers to help."></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="add-trait-btn" data-character="marvin"><i class="fas fa-plus"></i> Add Adjective / 添加形容词</button>
+                        </div>
+                        
+                        <!-- Nick -->
+                        <div class="character-card" data-character="nick">
+                            <div class="character-header">
+                                <h4><i class="fas fa-user"></i> Nick</h4>
+                            </div>
+                            <table class="character-traits-table">
+                                <thead>
+                                    <tr>
+                                        <th>Adjective / 形容词</th>
+                                        <th>Evidence / 证据</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text" class="table-input" placeholder="e.g. playful"></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. He likes to joke around."></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="table-input" placeholder="e.g. curious"></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. He asks many questions."></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="add-trait-btn" data-character="nick"><i class="fas fa-plus"></i> Add Adjective / 添加形容词</button>
+                        </div>
+                        
+                        <!-- Mrs. North -->
+                        <div class="character-card" data-character="mrs-north">
+                            <div class="character-header">
+                                <h4><i class="fas fa-user"></i> Mrs. North</h4>
+                            </div>
+                            <table class="character-traits-table">
+                                <thead>
+                                    <tr>
+                                        <th>Adjective / 形容词</th>
+                                        <th>Evidence / 证据</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text" class="table-input" placeholder="e.g. warm"></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. She smiles at everyone."></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="table-input" placeholder="e.g. patient"></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. She never gets angry."></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="add-trait-btn" data-character="mrs-north"><i class="fas fa-plus"></i> Add Adjective / 添加形容词</button>
+                        </div>
+                        
+                        <!-- Custom Character (blank for student to fill in) -->
+                        <div class="character-card character-custom" data-character="custom-1">
+                            <div class="character-header">
+                                <input type="text" class="character-name-input" placeholder="✏️ Write character name / 填写人物名字">
+                            </div>
+                            <table class="character-traits-table">
+                                <thead>
+                                    <tr>
+                                        <th>Adjective / 形容词</th>
+                                        <th>Evidence / 证据</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text" class="table-input" placeholder="adjective..."></td>
+                                        <td><input type="text" class="table-input" placeholder="evidence from text..."></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="table-input" placeholder="adjective..."></td>
+                                        <td><input type="text" class="table-input" placeholder="evidence from text..."></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="add-trait-btn" data-character="custom-1"><i class="fas fa-plus"></i> Add Adjective / 添加形容词</button>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="add-character-btn"><i class="fas fa-user-plus"></i> Add New Character / 添加新人物</button>
+                </div>
+            </section>
+
+            <!-- Section 6: Story Summary -->
+            <section class="card" id="story-summary">
+                <div class="card-header">
+                    <h3><i class="fas fa-bookmark"></i> Story Summary / 故事情节梳理</h3>
+                </div>
+                <div class="card-body">
+                    <p class="section-help">Identify and record logical connectors found in the story. Add new connectors as you discover them!</p>
+                    <div class="logic-connectors-section">
+                        <div class="table-container">
+                            <table class="logic-connectors-table" id="logic-connectors-table">
+                                <thead>
+                                    <tr>
+                                        <th>Type / 类型</th>
+                                        <th>Connector / 连接词</th>
+                                        <th>Chinese Meaning / 中文释义</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><select class="connector-type-select">
+                                            <option value="cause-effect">Cause & Effect / 因果</option>
+                                            <option value="contrast">Contrast / 转折</option>
+                                            <option value="sequence">Sequence / 顺序</option>
+                                            <option value="addition">Addition / 递进</option>
+                                            <option value="example">Example / 举例</option>
+                                            <option value="other">Other / 其他</option>
+                                        </select></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. because"></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. 因为"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><select class="connector-type-select">
+                                            <option value="contrast">Contrast / 转折</option>
+                                            <option value="cause-effect">Cause & Effect / 因果</option>
+                                            <option value="sequence">Sequence / 顺序</option>
+                                            <option value="addition">Addition / 递进</option>
+                                            <option value="example">Example / 举例</option>
+                                            <option value="other">Other / 其他</option>
+                                        </select></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. however"></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. 然而"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><select class="connector-type-select">
+                                            <option value="sequence">Sequence / 顺序</option>
+                                            <option value="cause-effect">Cause & Effect / 因果</option>
+                                            <option value="contrast">Contrast / 转折</option>
+                                            <option value="addition">Addition / 递进</option>
+                                            <option value="example">Example / 举例</option>
+                                            <option value="other">Other / 其他</option>
+                                        </select></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. first, then"></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. 首先，然后"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><select class="connector-type-select">
+                                            <option value="addition">Addition / 递进</option>
+                                            <option value="cause-effect">Cause & Effect / 因果</option>
+                                            <option value="contrast">Contrast / 转折</option>
+                                            <option value="sequence">Sequence / 顺序</option>
+                                            <option value="example">Example / 举例</option>
+                                            <option value="other">Other / 其他</option>
+                                        </select></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. also, moreover"></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. 也，此外"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><select class="connector-type-select">
+                                            <option value="example">Example / 举例</option>
+                                            <option value="cause-effect">Cause & Effect / 因果</option>
+                                            <option value="contrast">Contrast / 转折</option>
+                                            <option value="sequence">Sequence / 顺序</option>
+                                            <option value="addition">Addition / 递进</option>
+                                            <option value="other">Other / 其他</option>
+                                        </select></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. for example"></td>
+                                        <td><input type="text" class="table-input" placeholder="e.g. 例如"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <button type="button" class="add-connector-btn"><i class="fas fa-plus"></i> Add Logic Connector / 添加逻辑连接词</button>
+                    </div>
+                    <div class="textarea-group">
+                        <label for="main-story">Main Story Line / 故事主线:</label>
+                        <textarea id="main-story" class="form-control large" rows="5" placeholder="Describe the main story line..."></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 7: Personal Reflection -->
+            <section class="card" id="personal-reflection">
+                <div class="card-header">
+                    <h3><i class="fas fa-lightbulb"></i> Personal Reflection / 个人思考区</h3>
+                </div>
+                <div class="card-body">
+                    <p class="section-help">Write what you learned, your thoughts, and try to imitate a sentence in English.</p>
+                    <div class="textarea-group">
+                        <label for="what-learned">What I Learned / 我学到了什么:</label>
+                        <textarea id="what-learned" class="form-control" rows="4" placeholder="Write what you learned from this chapter..."></textarea>
+                    </div>
+                    <div class="textarea-group">
+                        <label for="my-thoughts">My Thoughts / 我的感悟:</label>
+                        <textarea id="my-thoughts" class="form-control" rows="4" placeholder="Write your personal thoughts..."></textarea>
+                    </div>
+                    <div class="textarea-group">
+                        <label for="sentence-imitation">Sentence Imitation / 英文一句话仿写:</label>
+                        <textarea id="sentence-imitation" class="form-control" rows="3" placeholder="Imitate a sentence from the text..."></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 8: Teacher's Comments -->
+            <section class="card" id="teacher-comments">
+                <div class="card-header">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Teacher's Comments / 教师批注栏</h3>
+                </div>
+                <div class="card-body">
+                    <p class="section-help">This section is for teacher's handwritten comments and feedback.</p>
+                    <div class="teacher-comment-area">
+                        <div class="comment-box">
+                            <textarea class="form-control xlarge" rows="8" placeholder="Teacher's comments will go here...&#10;老师的批注将写在这里..."></textarea>
+                        </div>
+                        <div class="comment-footer">
+                            <div class="signature">
+                                <input type="text" class="form-control signature-input" placeholder="Teacher's Signature / 教师签名">
+                            </div>
+                            <div class="date">
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p><i class="fas fa-heart"></i> Designed for 4th Grade English Learning</p>
+                <p class="print-hint"><i class="fas fa-print"></i> Tip: You can print this page for handwritten notes.</p>
+                <button class="print-btn" onclick="window.print()"><i class="fas fa-print"></i> Print Page / 打印页面</button>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Text-to-speech function for word pronunciation
+        let availableVoices = [];
+        
+        // Initialize speech synthesis voices
+        function initSpeechSynthesis() {
+            if ('speechSynthesis' in window) {
+                // Get initial voices
+                availableVoices = window.speechSynthesis.getVoices();
+                
+                // Update voices when they are loaded
+                window.speechSynthesis.onvoiceschanged = function() {
+                    availableVoices = window.speechSynthesis.getVoices();
+                };
+                
+                return true;
+            }
+            return false;
+        }
+        
+        // Get English (US) voice
+        function getEnglishVoice() {
+            if (availableVoices.length === 0) {
+                availableVoices = window.speechSynthesis.getVoices();
+            }
+            
+            // Try to find an English voice
+            const englishVoice = availableVoices.find(voice => 
+                voice.lang.startsWith('en') && 
+                (voice.name.includes('US') || voice.name.includes('American'))
+            );
+            
+            // Fallback to any English voice
+            if (!englishVoice) {
+                return availableVoices.find(voice => voice.lang.startsWith('en'));
+            }
+            
+            return englishVoice;
+        }
+        
+        function speakWord(word) {
+            if (!word || word.trim() === '') return;
+            
+            const cleanWord = word.trim();
+            
+            // Check if browser supports speech synthesis
+            if ('speechSynthesis' in window) {
+                // Cancel any ongoing speech
+                window.speechSynthesis.cancel();
+                
+                // Create speech utterance
+                const utterance = new SpeechSynthesisUtterance(cleanWord);
+                
+                // Set language to English (US)
+                utterance.lang = 'en-US';
+                
+                // Set voice if available
+                const englishVoice = getEnglishVoice();
+                if (englishVoice) {
+                    utterance.voice = englishVoice;
+                }
+                
+                // Set speech properties
+                utterance.rate = 0.9; // Slightly slower for clarity
+                utterance.pitch = 1.0;
+                utterance.volume = 1.0;
+                
+                // Speak the word
+                window.speechSynthesis.speak(utterance);
+                
+                // Return true if speech started
+                return true;
+            } else {
+                alert('Your browser does not support text-to-speech. Please try using Chrome, Edge, or Safari.');
+                return false;
+            }
+        }
+
+        // Add click event to play buttons
+        function addPlayButtonListener(playButton) {
+            playButton.addEventListener('click', function() {
+                // Find the word in the same row (first column)
+                const row = this.closest('tr');
+                if (row) {
+                    const wordInput = row.querySelector('td:first-child input');
+                    if (wordInput && wordInput.value) {
+                        const word = wordInput.value.trim();
+                        if (word) {
+                            // Add visual feedback
+                            this.classList.add('playing');
+                            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                            
+                            // Speak the word
+                            const speaking = speakWord(word);
+                            
+                            // Reset button after speech completes
+                            if (speaking) {
+                                setTimeout(() => {
+                                    this.classList.remove('playing');
+                                    this.innerHTML = '<i class="fas fa-volume-up"></i>';
+                                }, 1500); // Reset after reasonable time
+                            } else {
+                                this.classList.remove('playing');
+                                this.innerHTML = '<i class="fas fa-volume-up"></i>';
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Setup play buttons for all existing rows
+        function setupPlayButtons() {
+            const playButtons = document.querySelectorAll('.words-table .play-btn');
+            playButtons.forEach(button => {
+                addPlayButtonListener(button);
+            });
+        }
+
+        // Add row to new words table
+        document.querySelector('.add-row-btn').addEventListener('click', function() {
+            const tbody = document.querySelector('.words-table tbody');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td><input type="text" class="table-input"></td>
+                <td><button type="button" class="play-btn" title="Play pronunciation"><i class="fas fa-volume-up"></i></button></td>
+                <td><input type="text" class="table-input"></td>
+                <td><input type="text" class="table-input"></td>
+            `;
+            tbody.appendChild(newRow);
+
+            // Add play button listener to the new button
+            const newPlayButton = newRow.querySelector('.play-btn');
+            addPlayButtonListener(newPlayButton);
+
+            // Auto-save support for new row
+            if (typeof initForNewRow === 'function') {
+                initForNewRow(newRow);
+            }
+        });
+
+        // Add row to phrases table
+        document.querySelector('.add-phrase-btn').addEventListener('click', function() {
+            const tbody = document.querySelector('.phrases-table tbody');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td><input type="text" class="table-input"></td>
+                <td><input type="text" class="table-input"></td>
+                <td><textarea class="phrase-memory" rows="3"></textarea></td>
+            `;
+            tbody.appendChild(newRow);
+
+            // Auto-save support for new row
+            if (typeof initForNewRow === 'function') {
+                initForNewRow(newRow);
+            }
+        });
+
+        // Sentence analysis functions
+        let sentenceCounter = 2; // Start from 2 since we already have 2 sentences
+        
+        // Add new sentence block
+        function addNewSentence() {
+            sentenceCounter++;
+            const sentenceContainer = document.getElementById('sentence-container');
+            const newSentenceBlock = document.createElement('div');
+            newSentenceBlock.className = 'sentence-block';
+            newSentenceBlock.dataset.sentenceId = sentenceCounter;
+            
+            newSentenceBlock.innerHTML = `
+                <div class="sentence-header">
+                    <h4><i class="fas fa-align-left"></i> Sentence #${sentenceCounter}</h4>
+                    <button type="button" class="remove-sentence-btn" title="Remove this sentence"><i class="fas fa-times"></i></button>
+                </div>
+                
+                <div class="sentence-content">
+                    <div class="textarea-group">
+                        <label>Original Sentence / 原句:</label>
+                        <textarea class="form-control sentence-original" rows="3" placeholder="Copy the difficult sentence from the text..."></textarea>
+                    </div>
+                    
+                    <div class="grammar-points-section">
+                        <div class="section-subheader">
+                            <h5><i class="fas fa-code-branch"></i> Grammar Points / 语法点</h5>
+                            <button type="button" class="add-grammar-point-btn" data-sentence-id="${sentenceCounter}">Add Grammar Point / 添加语法点</button>
+                        </div>
+                        
+                        <div class="table-container">
+                            <table class="grammar-points-table">
+                                <thead>
+                                    <tr>
+                                        <th>Grammar Point / 语法点</th>
+                                        <th>Chinese Explanation / 中文释义</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text" class="table-input"></td>
+                                        <td><input type="text" class="table-input"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="table-input"></td>
+                                        <td><input type="text" class="table-input"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="textarea-group">
+                        <label>Imitation Practice / 仿写:</label>
+                        <textarea class="form-control sentence-imitation" rows="3" placeholder="Write your own sentence using the same structure..."></textarea>
+                    </div>
+                </div>
+            `;
+            
+            sentenceContainer.appendChild(newSentenceBlock);
+            
+            // Add event listener to the new remove button
+            const removeBtn = newSentenceBlock.querySelector('.remove-sentence-btn');
+            removeBtn.addEventListener('click', function() {
+                newSentenceBlock.remove();
+            });
+            
+            // Add event listener to the new add grammar point button
+            const addGrammarBtn = newSentenceBlock.querySelector('.add-grammar-point-btn');
+            addGrammarBtn.addEventListener('click', function() {
+                const sentenceId = this.dataset.sentenceId;
+                addGrammarPoint(sentenceId);
+            });
+        }
+        
+        // Add grammar point to a specific sentence
+        function addGrammarPoint(sentenceId) {
+            const sentenceBlock = document.querySelector(`.sentence-block[data-sentence-id="${sentenceId}"]`);
+            if (!sentenceBlock) return;
+
+            const grammarTable = sentenceBlock.querySelector('.grammar-points-table tbody');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td><input type="text" class="table-input"></td>
+                <td><input type="text" class="table-input"></td>
+            `;
+            grammarTable.appendChild(newRow);
+
+            // Auto-save support for new row
+            if (typeof initForNewRow === 'function') {
+                initForNewRow(newRow);
+            }
+        }
+        
+        // Initialize sentence analysis functionality
+        function initSentenceAnalysis() {
+            // Add event listener to the main add sentence button
+            const addSentenceBtn = document.querySelector('.add-sentence-btn');
+            if (addSentenceBtn) {
+                addSentenceBtn.addEventListener('click', addNewSentence);
+            }
+            
+            // Add event listeners to existing remove sentence buttons
+            const removeSentenceBtns = document.querySelectorAll('.remove-sentence-btn');
+            removeSentenceBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const sentenceBlock = this.closest('.sentence-block');
+                    sentenceBlock.remove();
+                });
+            });
+            
+            // Add event listeners to existing add grammar point buttons
+            const addGrammarPointBtns = document.querySelectorAll('.add-grammar-point-btn');
+            addGrammarPointBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const sentenceId = this.dataset.sentenceId;
+                    addGrammarPoint(sentenceId);
+                });
+            });
+        }
+        
+        // Character analysis functions
+        let customCharacterCounter = 1;
+        
+        // Add a trait row to a character's table
+        function addTraitRow(characterKey) {
+            const characterCard = document.querySelector(`.character-card[data-character="${characterKey}"]`);
+            if (!characterCard) return;
+
+            const tbody = characterCard.querySelector('.character-traits-table tbody');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td><input type="text" class="table-input" placeholder="adjective..."></td>
+                <td><input type="text" class="table-input" placeholder="evidence from text..."></td>
+            `;
+            tbody.appendChild(newRow);
+
+            // Auto-save support for new row
+            if (typeof initForNewRow === 'function') {
+                initForNewRow(newRow);
+            }
+        }
+        
+        // Add a new custom character card
+        function addNewCharacter() {
+            customCharacterCounter++;
+            const characterKey = `custom-${customCharacterCounter}`;
+            const grid = document.getElementById('character-grid');
+            
+            const newCard = document.createElement('div');
+            newCard.className = 'character-card character-custom';
+            newCard.dataset.character = characterKey;
+            
+            newCard.innerHTML = `
+                <div class="character-header">
+                    <input type="text" class="character-name-input" placeholder="✏️ Write character name / 填写人物名字">
+                </div>
+                <table class="character-traits-table">
+                    <thead>
+                        <tr>
+                            <th>Adjective / 形容词</th>
+                            <th>Evidence / 证据</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class="table-input" placeholder="adjective..."></td>
+                            <td><input type="text" class="table-input" placeholder="evidence from text..."></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="table-input" placeholder="adjective..."></td>
+                            <td><input type="text" class="table-input" placeholder="evidence from text..."></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="add-trait-btn" data-character="${characterKey}"><i class="fas fa-plus"></i> Add Adjective / 添加形容词</button>
+            `;
+            
+            grid.appendChild(newCard);
+
+            // Add event listener to the new add trait button
+            const addTraitBtn = newCard.querySelector('.add-trait-btn');
+            addTraitBtn.addEventListener('click', function() {
+                addTraitRow(characterKey);
+            });
+
+            // Auto-save support for new character card
+            if (typeof initForNewRow === 'function') {
+                initForNewRow(newCard);
+            }
+        }
+        
+        // Initialize character analysis functionality
+        function initCharacterAnalysis() {
+            // Add event listeners to existing add trait buttons
+            const addTraitBtns = document.querySelectorAll('.add-trait-btn');
+            addTraitBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const characterKey = this.dataset.character;
+                    addTraitRow(characterKey);
+                });
+            });
+            
+            // Add event listener to the add character button
+            const addCharacterBtn = document.querySelector('.add-character-btn');
+            if (addCharacterBtn) {
+                addCharacterBtn.addEventListener('click', addNewCharacter);
+            }
+        }
+        
+        // Logic connectors functions
+        function initLogicConnectors() {
+            // Add event listener to the add connector button
+            const addConnectorBtn = document.querySelector('.add-connector-btn');
+            if (addConnectorBtn) {
+                addConnectorBtn.addEventListener('click', addLogicConnectorRow);
+            }
+        }
+        
+        function addLogicConnectorRow() {
+            const tbody = document.querySelector('#logic-connectors-table tbody');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td><select class="connector-type-select">
+                    <option value="cause-effect">Cause & Effect / 因果</option>
+                    <option value="contrast">Contrast / 转折</option>
+                    <option value="sequence">Sequence / 顺序</option>
+                    <option value="addition">Addition / 递进</option>
+                    <option value="example">Example / 举例</option>
+                    <option value="other">Other / 其他</option>
+                </select></td>
+                <td><input type="text" class="table-input" placeholder="e.g. because"></td>
+                <td><input type="text" class="table-input" placeholder="e.g. 因为"></td>
+            `;
+            tbody.appendChild(newRow);
+
+            // Auto-save support for new row
+            if (typeof initForNewRow === 'function') {
+                initForNewRow(newRow);
+            }
+        }
+        
+        // Auto-save functionality for mobile local storage
+        function initAutoSave() {
+            // Generate a unique key for an element
+            function generateStorageKey(element) {
+                // Try to use ID first
+                if (element.id) {
+                    return `english_reading_${element.id}`;
+                }
+                
+                // Generate key based on element's position and attributes
+                const path = [];
+                let current = element;
+                
+                while (current && current !== document.body) {
+                    if (current.id) {
+                        path.unshift(`#${current.id}`);
+                        break;
+                    } else if (current.className && typeof current.className === 'string') {
+                        const classes = current.className.split(' ').filter(c => c).join('.');
+                        if (classes) {
+                            path.unshift(`.${classes}`);
+                        }
+                    }
+                    current = current.parentElement;
+                }
+                
+                // Add element type and name
+                const tagName = element.tagName.toLowerCase();
+                const name = element.name || '';
+                const type = element.type || '';
+                
+                let key = `english_reading_${tagName}`;
+                if (name) key += `_${name}`;
+                if (type) key += `_${type}`;
+                if (path.length > 0) key += `_${path.join('_')}`;
+                
+                // For table rows, add row index
+                if (element.closest('tr')) {
+                    const row = element.closest('tr');
+                    const rows = Array.from(row.parentElement.children);
+                    const rowIndex = rows.indexOf(row);
+                    key += `_row${rowIndex}`;
+                }
+                
+                // For sentence blocks, add sentence ID
+                const sentenceBlock = element.closest('.sentence-block');
+                if (sentenceBlock && sentenceBlock.dataset.sentenceId) {
+                    key += `_sentence${sentenceBlock.dataset.sentenceId}`;
+                }
+                
+                return key.replace(/[^a-zA-Z0-9_]/g, '_').substring(0, 100);
+            }
+            
+            // Save element value to localStorage
+            function saveElementValue(element) {
+                const key = generateStorageKey(element);
+                let value = '';
+                
+                if (element.type === 'radio' || element.type === 'checkbox') {
+                    value = element.checked ? element.value : '';
+                } else if (element.type === 'date') {
+                    value = element.value;
+                } else {
+                    value = element.value;
+                }
+                
+                try {
+                    localStorage.setItem(key, value);
+                } catch (e) {
+                    if (e.name === 'QuotaExceededError') {
+                        Object.keys(localStorage).forEach(k => {
+                            if (k.startsWith('english_reading_')) {
+                                localStorage.removeItem(k);
+                            }
+                        });
+                        try {
+                            localStorage.setItem(key, value);
+                        } catch (e2) {
+                            // Silently fail if storage is still full
+                        }
+                    }
+                }
+            }
+            
+            // Restore element value from localStorage
+            function restoreElementValue(element) {
+                const key = generateStorageKey(element);
+                const savedValue = localStorage.getItem(key);
+                
+                if (savedValue !== null) {
+                    if (element.type === 'radio') {
+                        element.checked = (element.value === savedValue);
+                    } else if (element.type === 'checkbox') {
+                        element.checked = (savedValue === 'true' || savedValue === element.value);
+                    } else if (element.type === 'date') {
+                        element.value = savedValue;
+                    } else {
+                        element.value = savedValue;
+                    }
+                }
+            }
+            
+            // Initialize all existing input elements
+            function initializeExistingElements() {
+                // Select all input elements that should be saved
+                const inputs = document.querySelectorAll(`
+                    input[type="text"],
+                    input[type="number"],
+                    input[type="date"],
+                    textarea,
+                    input[type="radio"],
+                    input[type="checkbox"],
+                    select
+                `);
+                
+                inputs.forEach(input => {
+                    // Restore saved value
+                    restoreElementValue(input);
+                    
+                    // Add event listener with debouncing
+                    let saveTimeout;
+                    input.addEventListener('input', function() {
+                        clearTimeout(saveTimeout);
+                        saveTimeout = setTimeout(() => {
+                            saveElementValue(this);
+                        }, 500); // Debounce 500ms
+                    });
+                    
+                    // Also save on blur for immediate feedback
+                    input.addEventListener('blur', function() {
+                        saveElementValue(this);
+                    });
+                    
+                    // Special handling for radio buttons
+                    if (input.type === 'radio') {
+                        input.addEventListener('change', function() {
+                            saveElementValue(this);
+                            // Also save all other radios in the group
+                            const name = this.name;
+                            if (name) {
+                                document.querySelectorAll(`input[name="${name}"]`).forEach(radio => {
+                                    saveElementValue(radio);
+                                });
+                            }
+                        });
+                    }
+                });
+                
+                // Special handling for rating stars
+                const ratingInputs = document.querySelectorAll('.stars input[type="radio"]');
+                ratingInputs.forEach(input => {
+                    input.addEventListener('change', function() {
+                        saveElementValue(this);
+                    });
+                });
+            }
+            
+            // Set up event delegation for dynamically added elements
+            function setupEventDelegation() {
+                // Listen for input events on the document
+                document.addEventListener('input', function(event) {
+                    const target = event.target;
+                    if (target.matches(`
+                        input[type="text"],
+                        input[type="number"],
+                        input[type="date"],
+                        textarea,
+                        input[type="radio"],
+                        input[type="checkbox"],
+                        select
+                    `)) {
+                        // Debounced save
+                        clearTimeout(target._saveTimeout);
+                        target._saveTimeout = setTimeout(() => {
+                            saveElementValue(target);
+                        }, 500);
+                    }
+                });
+                
+                // Also save on blur
+                document.addEventListener('blur', function(event) {
+                    const target = event.target;
+                    if (target.matches(`
+                        input[type="text"],
+                        input[type="number"],
+                        input[type="date"],
+                        textarea,
+                        input[type="radio"],
+                        input[type="checkbox"],
+                        select
+                    `)) {
+                        saveElementValue(target);
+                    }
+                }, true);
+                
+                // Handle change events for radio/checkbox
+                document.addEventListener('change', function(event) {
+                    const target = event.target;
+                    if (target.type === 'radio' || target.type === 'checkbox') {
+                        saveElementValue(target);
+                    }
+                });
+            }
+            
+            // Initialize for newly added rows (to be called after adding rows)
+            function initForNewRow(rowElement) {
+                const inputs = rowElement.querySelectorAll(`
+                    input[type="text"],
+                    input[type="number"],
+                    input[type="date"],
+                    textarea,
+                    input[type="radio"],
+                    input[type="checkbox"],
+                    select
+                `);
+                
+                inputs.forEach(input => {
+                    restoreElementValue(input);
+                    
+                    let saveTimeout;
+                    input.addEventListener('input', function() {
+                        clearTimeout(saveTimeout);
+                        saveTimeout = setTimeout(() => {
+                            saveElementValue(this);
+                        }, 500);
+                    });
+                    
+                    input.addEventListener('blur', function() {
+                        saveElementValue(this);
+                    });
+                });
+            }
+            
+            // Add clear data button for testing/management
+            function addClearDataButton() {
+                const footer = document.querySelector('.footer-content');
+                if (footer && !document.getElementById('clear-data-btn')) {
+                    const clearBtn = document.createElement('button');
+                    clearBtn.id = 'clear-data-btn';
+                    clearBtn.className = 'print-btn';
+                    clearBtn.style.marginTop = '10px';
+                    clearBtn.style.backgroundColor = '#e74c3c';
+                    clearBtn.innerHTML = '<i class="fas fa-trash"></i> Clear Saved Data / 清除保存的数据';
+                    clearBtn.addEventListener('click', function() {
+                        if (confirm('Are you sure you want to clear all saved data? This cannot be undone. / 确定要清除所有保存的数据吗？此操作不可撤销。')) {
+                            Object.keys(localStorage).forEach(key => {
+                                if (key.startsWith('english_reading_')) {
+                                    localStorage.removeItem(key);
+                                }
+                            });
+                            location.reload();
+                        }
+                    });
+                    footer.appendChild(clearBtn);
+                }
+            }
+            
+            // Initialize everything
+            initializeExistingElements();
+            setupEventDelegation();
+            addClearDataButton();
+        }
+
+        // Set today's date as default
+        window.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('reading-date').value = today;
+            
+            // Set default chapter title
+            document.getElementById('chapter-title').value = "Teacher's Pet";
+
+            // Initialize speech synthesis
+            initSpeechSynthesis();
+            
+            // Setup play buttons for existing rows
+            setupPlayButtons();
+            
+            // Initialize sentence analysis functionality
+            initSentenceAnalysis();
+            
+            // Initialize character analysis functionality
+            initCharacterAnalysis();
+            
+            // Initialize logic connectors functionality
+            initLogicConnectors();
+            
+            // Initialize auto-save functionality
+            initAutoSave();
+        });
+
+    </script>
+</body>
+</html>
